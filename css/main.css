@@ -1,87 +1,102 @@
-@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@900&display=swap');
-@font-face {
-    font-family: Squares;
-    src: url("../fonts/squares.otf") format("opentype");
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
 
-html, body {height: 100%;}
-
-body{background: #17171C;}
+body{background: white;}
 body,p,hr,h1,h2,h3,h4,h5{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-a{text-decoration: none}
-a:link, a:visited, a:active {color: #262B31;}
-
-:focus {outline: 0;}
-
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@900&display=swap');
-
-.wrap {
-  display: block;
-  margin: 0 auto;
-  width: fit-content;
-  position: relative;
-  top: 50px;
-  -webkit-perspective: 100px;
-  perspective: 100px;
-  text-transform: uppercase;
+body{
+  font-family: tahoma;
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
 }
 
-.text {
-    font-family: 'Kanit', sans-serif;
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #d3d3d3;
-    font-size: 10vw;
-    font-weight: bold;
-        text-shadow: -4px 0px 0 #ff5353, 1px -3px 0 #0f9bcc, -7px 1px 0 #2f2323, -3px 26px 0 #231a1a;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-}
-.text:first-child {
-  position: relative;
-}
-
-body{background-color: #2f2323;font-family: tahoma;padding: 0;margin: 0;}
 a{text-decoration: none;}
-.container{
-  /*background-color: #272121;*/
-    padding: 70px 0;
-    margin: 4vw auto;
-    text-align: center;
-    /*border-top: 1px dashed;*/
-    /*border-bottom: 1px dashed;*/
-    border-color: lightslategrey;
+a:link {
+  color: #252020;
+  background-color: transparent;
+  text-decoration: none;
 }
-.container>div>a{
+a:visited {
+  color: #252020;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #252020;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #252020;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.header{
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.headline{
+  padding-top: 20px;
+  display: inline-block;
+  letter-spacing: 5px;
+  text-align: left;
+  color: #252020;
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.menu{
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  top: 34px;
+}
+
+.text-menu{
+  padding-left: 20px;
+  font-weight: 300;
+  display: inline-block;
+  font-family: 'Lato', sans-serif;
+}
+
+.image{
+  position: relative;
+  overflow: hidden;
+  width: 90%;
+  height: 635px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+.single{
+  height: 1000px;
+}
+
+.image .image-single{
   width: 100%;
-  max-width: 700px;
-  font-size: 52px;
-  font-weight: 600;
-  color: lightgrey;
-    display: inline-block;
-  line-height: 2;
-    transition: 0.4s ease-out;
-    text-shadow: 0px 3px 3px #752C29;
-    box-shadow: inset 0px 0px 106px #702323, 0px 5px 10px #141313;
-    /* http: //colorzilla.com/gradient-editor/#e04747+0,b33838+6,b33838+93,6d3630+100; */
-    background: #e04747;
-    background: -moz-linear-gradient(top, #e04747 0%, #b33838 6%, #b33838 93%, #6d3630 100%);
-    background: -webkit-linear-gradient(top, #e04747 0%,#b33838 6%,#b33838 93%,#6d3630 100%);
-    background: linear-gradient(to bottom, #e04747 0%,#b33838 6%,#b33838 93%,#6d3630 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e04747', endColorstr='#6d3630',GradientType=0 );
 }
-.container>div:first-child>a{
-  border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+
+.image .image-double{
+  width: 47%;
 }
-.container>div:last-child>a{
-  border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+
+.image .image-double:first-child{
+  position: absolute;
+  left: 0;
+  display: inline-block;
+}
+.image .image-double:last-child{
+  position: absolute;
+  right: 0;
+  display: inline-block;
 }
