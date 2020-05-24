@@ -126,7 +126,7 @@ a:active {
 .zoom{
   cursor: zoom-in;
   /*position: unset;*/
-  /*height: 490px;*/
+  height: 100%;
   /*width: 900px;*/
   /*display: inline-block;*/
   /*overflow: hidden;*/
