@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
 
-body{background: white;}
+*{-webkit-tap-highlight-color: transparent;}
+
 body,p,hr,h1,h2,h3,h4,h5{
   margin: 0;
   padding: 0;
@@ -8,10 +9,12 @@ body,p,hr,h1,h2,h3,h4,h5{
 }
 
 body{
+  background: white;
   font-family: tahoma;
   padding: 0;
   margin: 0;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility!important;
 }
 
 a{text-decoration: none;}
@@ -39,13 +42,18 @@ a:active {
 }
 
 .header{
-  position: relative;
-  width: 90%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 90px;
   margin: 0 auto;
   margin-bottom: 40px;
+  z-index: 99;
+  background: white;
 }
 
 .headline{
+  padding-left: 60px;
   padding-top: 20px;
   display: inline-block;
   letter-spacing: 5px;
@@ -57,9 +65,10 @@ a:active {
 }
 
 .menu{
-  display: inline-block;
   position: absolute;
-  right: 0px;
+  right: 170px;
+  top: 34px;
+  right: 60px;
   top: 34px;
 }
 
@@ -69,34 +78,75 @@ a:active {
   display: inline-block;
   font-family: 'Lato', sans-serif;
 }
-
+.wrap{
+  margin: auto;
+  margin-top: 100px;
+ }
+ .wrap-solid{
+  width: 70%;
+  margin: auto;
+  margin-top: 100px;
+ }
 .image{
-  position: relative;
+  /*position: relative;*/
+  text-align: center;
   overflow: hidden;
-  width: 90%;
-  height: 635px;
+  /*width: 90%;*/
+  height: 700px;
   margin: 0 auto;
-  margin-bottom: 80px;
+  margin-bottom: 6vw;
 }
 .single{
-  height: 1000px;
+  /*height: 740px;*/
 }
 
+.double{}
+
 .image .image-single{
-  width: 100%;
+  /*width: 100%;*/
 }
 
 .image .image-double{
-  width: 47%;
+  /*width: 47%;*/
 }
 
 .image .image-double:first-child{
-  position: absolute;
-  left: 0;
-  display: inline-block;
+  /*position: relative;*/
+  /*width: 640px;*/
+  /*left: 0;*/
+  /*display: inline-block;*/
 }
 .image .image-double:last-child{
+  /*position: absolute;*/
+  /*right: 0;*/
+  /*top: 0;*/
+  /*display: inline-block;*/
+}
+
+.zoom{
+  cursor: zoom-in;
+  /*position: unset;*/
+  /*height: 490px;*/
+  /*width: 900px;*/
+  /*display: inline-block;*/
+  /*overflow: hidden;*/
+}
+
+.zoomImg{
+  /*width: 100%;*/
+  /*height: none;*/
+  transition: opacity 0.5s ease-out 0s;
+}
+
+.image-solid{
+  text-align: center;
+}
+
+.bg{
+  top: 0;
   position: absolute;
-  right: 0;
-  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat;
+  background-size: 800px;
 }
