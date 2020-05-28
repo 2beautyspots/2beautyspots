@@ -78,29 +78,42 @@ a:active {
   display: inline-block;
   font-family: 'Lato', sans-serif;
 }
+
 .wrap{
+  width: 90%;
   margin: auto;
   margin-top: 100px;
  }
+
  .wrap-solid{
   width: 70%;
   margin: auto;
   margin-top: 100px;
  }
+
+ .wimages{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    column-gap: 4%;
+    margin-bottom: 4%;
+ }
+
 .image{
   /*position: relative;*/
-  text-align: center;
-  overflow: hidden;
+  /*text-align: center;*/
+  /*overflow: hidden;*/
   /*width: 90%;*/
   height: 700px;
-  margin: 0 auto;
-  margin-bottom: 6vw;
-}
-.single{
-  /*height: 740px;*/
+  /*margin: 0 auto;*/
 }
 
-.double{}
+.one{
+  margin-bottom: 4%;
+}
+
+.double{
+  width: 100%;
+}
 
 .image .image-single{
   /*width: 100%;*/
