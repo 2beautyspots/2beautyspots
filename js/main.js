@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('.zoom').zoom({ on:'click' });
+	$('.zoom').zoom({ on:'grab' });
 
     // loop();
     $('#skate').animate({ 'background-position-y': '-100000000000000%'}, 20000000000000000, 'linear');

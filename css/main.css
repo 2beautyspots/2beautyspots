@@ -47,17 +47,16 @@ a:active {
   width: 100%;
   height: 90px;
   margin: 0 auto;
-  margin-bottom: 40px;
   z-index: 99;
   background: white;
 }
 
 .headline{
-  padding-left: 60px;
+  height: 100%;
+  padding-left: 5%;
   padding-top: 20px;
   display: inline-block;
   letter-spacing: 5px;
-  text-align: left;
   color: #252020;
   font-family: 'Lato', sans-serif;
   font-size: 30px;
@@ -65,11 +64,11 @@ a:active {
 }
 
 .menu{
-  position: absolute;
-  right: 170px;
-  top: 34px;
-  right: 60px;
-  top: 34px;
+  float: right;
+  padding-right: 5%;
+  background: white;
+  padding-top: 34px;
+  padding-bottom: 15px;
 }
 
 .text-menu{
@@ -137,7 +136,7 @@ a:active {
 }
 
 .zoom{
-  cursor: zoom-in;
+  cursor: grab;
   /*position: unset;*/
   height: 100%;
   /*width: 900px;*/
@@ -162,4 +161,23 @@ a:active {
   height: 100%;
   background-repeat: repeat;
   background-size: 800px;
+}
+
+
+@media all and (max-width: 650px){
+  .headline{
+    display: none;
+  }
+  .header{
+    background: none;
+  }
+  .text-menu{
+    padding-left: 11px;
+  }
+  .menu{
+    width: 100%;
+    float: none;
+    margin: 0px 5%;
+    padding-right: 5%;
+  }
 }
