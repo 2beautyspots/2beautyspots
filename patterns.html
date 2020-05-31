@@ -19,13 +19,51 @@
 <!-- BODY -->
 <body>
 
+<!-- MENU -->
+
+<div class="container">
+
+<div class="popover" id="menu">
+ <div class = 'content'>
+  <a href="#" class="close"></a>
+   <div class = 'nav'>
+    <ul class = 'nav_list'>
+
+      <div class = 'nav_list_item'>
+    <li><a href="index.html">Linear</a></li>
+      </div>
+     <div class = 'nav_list_item'>
+    <li><a href="solid.html">Character</a></li>
+      </div>
+    <div class = 'nav_list_item'>
+    <li><a href="#">Patterns</a></li>
+      </div>
+
+<!--     <div class = 'nav_list_item'>
+    <li><a href="#">Animations</a></li>
+      </div> -->
+
+  </ul>
+  </div>
+ </div>
+ </div>
+ </div>
+
+<!-- HEADER -->
+
 <div class="header">
   <h1 class="headline">2beautyspots</h1>
+
   <div class="menu">
-    <a href="index.html" class="text-menu">Linear</a>
-    <a href="solid.html" class="text-menu">Character</a>
-    <a href="patterns" class="text-menu" style="text-decoration: line-through;">Patterns</a>
-    <a href="#" class="text-menu" style="color: #afafaf;">Animations</a>
+
+    <a href="#menu" class="popupmenu">Menu</a>
+
+    <span>
+      <a href="index.html" class="text-menu">Linear</a>
+      <a href="solid.html" class="text-menu">Character</a>
+      <a href="#" class="text-menu" style="text-decoration: line-through;">Patterns</a>
+      <a href="#" class="text-menu" style="color: #afafaf;">Animations</a>
+    </span>
   </div>
 </div>
 
@@ -94,7 +132,7 @@
   <div class="wimages">
     <div class="image double">
       <div class="zoom">
-        <div class="bg" style="background-image: url(img/patterns/p-8.png);    background-size: 1000px;"></div>
+        <div class="bg" id="floral" style="background-image: url(img/patterns/p-8.png);    background-size: 1000px;"></div>
         <img class="image-double" src="img/patterns/p-8.png" width='800'>
       </div>
     </div>
